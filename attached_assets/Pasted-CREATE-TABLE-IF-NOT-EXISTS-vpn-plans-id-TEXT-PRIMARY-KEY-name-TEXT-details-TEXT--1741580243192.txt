@@ -1,0 +1,34 @@
+CREATE TABLE IF NOT EXISTS vpn_plans (
+    id TEXT PRIMARY KEY,
+    name TEXT,
+    details TEXT,
+    price DECIMAL
+);
+-- Insert the VPN plans with unique IDs
+INSERT INTO vpn_plans (id, name, details, price) VALUES
+    ('1month', '1 Month Basic', '30GB Traffic • 1 Month • 2 Devices', 42000),
+    ('3month', '3 Months Pro', '100GB Traffic • 3 Months • 3 Devices', 110000),
+    ('6month', '6 Months Premium', '250GB Traffic • 6 Months • 5 Devices', 200000),
+    ('30GB-1M-3D', '1 Month 30GB + 3 Devices', '30GB Traffic • 1 Month • 3 Devices', 90000),
+    ('45GB-1M-3D', '1 Month 45GB + 3 Devices', '45GB Traffic • 1 Month • 3 Devices', 115000),
+    ('100GB-2M-5D', '2 Months 100GB + 5 Devices', '100GB Traffic • 2 Months • 5 Devices', 210000),
+    ('150GB-3M-10D', '3 Months 150GB + 10 Devices', '150GB Traffic • 3 Months • 10 Devices', 300000),
+    ('Unlimited-1M-3D', '1 Month Unlimited + 3 Devices', 'Unlimited Traffic • 1 Month • 3 Devices', 160000),
+    ('Unlimited-2M-5D', '2 Months Unlimited + 5 Devices', 'Unlimited Traffic • 2 Months • 5 Devices', 1290000),
+    ('Unlimited-3M-10D', '3 Months Unlimited + 10 Devices', 'Unlimited Traffic • 3 Months • 10 Devices', 415000),
+    ('Unlimited-6M-15D', '6 Months Unlimited + 15 Devices', 'Unlimited Traffic • 6 Months • 15 Devices', 700000),
+    ('Unlimited-12M-30D', '12 Months Unlimited + 30 Devices', 'Unlimited Traffic • 12 Months • 30 Devices', 1250000),
+    ('15GB-1M', '1 Month 15GB', '15GB Traffic • 1 Month • 1 Device', 60000),
+    ('20GB-1M', '1 Month 20GB', '20GB Traffic • 1 Month • 1 Device', 70000),
+    ('30GB-2M-5D', '2 Months 30GB + 5 Devices', '30GB Traffic • 2 Months • 5 Devices', 130000),
+    ('70GB-1M-3D', '1 Month 70GB + 3 Devices', '70GB Traffic • 1 Month • 3 Devices', 140000),
+    ('25GB-1M-3D-StaticIP', '1 Month 25GB + 3 Devices + Static IP', '25GB Traffic • 1 Month • 3 Devices • Static IP', 150000),
+    ('50GB-1M-3D', '1 Month 50GB + 3 Devices', '50GB Traffic • 1 Month • 3 Devices', 130000),
+    ('Unlimited-1M-3D-StaticIP', '1 Month Unlimited + 3 Devices + Static IP', 'Unlimited Traffic • 1 Month • 3 Devices • Static IP', 240000),
+    ('15GB-1M-3D', '1 Month 15GB + 3 Devices', '15GB Traffic • 1 Month • 3 Devices', 65000),
+    ('60GB-1M-3D', '1 Month 60GB + 3 Devices', '60GB Traffic • 1 Month • 3 Devices', 150000),
+    ('Unlimited-12M', '12 Months Unlimited', 'Unlimited Traffic • 12 Months • 1 Device', 2200000),
+    ('Unlimited-1M', '1 Month Unlimited', 'Unlimited Traffic • 1 Month • 1 Device', 350000),
+    ('Unlimited-2M', '2 Months Unlimited', 'Unlimited Traffic • 2 Months • 1 Device', 590000),
+    ('Unlimited-3M', '3 Months Unlimited', 'Unlimited Traffic • 3 Months • 1 Device', 700000),
+    ('Unlimited-6M', '6 Months Unlimited', 'Unlimited Traffic • 6 Months • 1 Device', 1300000)
